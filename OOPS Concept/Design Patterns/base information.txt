@@ -1,0 +1,103 @@
+**GoF** stands for **Gang of Four**.
+
+In software engineering, the **Gang of Four** refers to the four authors of the famous book:
+
+> **“Design Patterns: Elements of Reusable Object-Oriented Software”**
+
+### The 4 authors
+
+1. **Erich Gamma**
+2. **Richard Helm**
+3. **Ralph Johnson**
+4. **John Vlissides**
+
+They are collectively called the **Gang of Four (GoF)**.
+
+### Why is GoF important in LLD?
+
+Their book introduced the **23 classic design patterns**, divided into 3 categories:
+
+| Category       | Patterns | Purpose                       |
+| -------------- | -------- | ----------------------------- |
+| **Creational** | 5        | Object creation               |
+| **Structural** | 7        | Object/class relationships    |
+| **Behavioral** | 11       | Object communication/behavior |
+
+So when someone says:
+
+> **"GoF Design Patterns"**
+
+they usually mean these **23 classic patterns**.
+
+For interviews, you can say:
+
+> **“GoF refers to the Gang of Four—the four authors who documented 23 classic object-oriented design patterns. These patterns are categorized into creational, structural, and behavioral patterns and are widely used in LLD.”**
+====================================================================
+
+
+
+                    LLD
+                     |
+        ┌────────────┴────────────┐
+        ↓                         ↓
+      OOP                       SOLID
+        ↓                         ↓
+  Encapsulation             S - Single Responsibility
+  Abstraction               O - Open/Closed
+  Inheritance               L - Liskov Substitution
+  Polymorphism              I - Interface Segregation
+                            D - Dependency Inversion
+        │
+        └──────────┬───────────┘
+                   ↓
+            Design Patterns
+                   ↓
+        ┌──────────┼──────────┐
+        ↓          ↓          ↓
+    Creational  Structural  Behavioral
+        ↓          ↓          ↓
+     Factory     Adapter     Strategy
+     Builder     Decorator   Observer
+     Singleton   Facade      State
+                   ↓
+              LLD Problems
+                   ↓
+       Parking Lot
+       Library Management
+       ATM
+       Elevator
+       Car Rental
+       Food Delivery
+       Movie Ticket Booking
+       Chess
+       Vending Machine
+       Splitwise
+================================================================
+
+
+
+| Pattern                 | Category   | Main Idea                           | Interview Priority |
+| ----------------------- | ---------- | ----------------------------------- | ------------------ |
+| Singleton               | Creational | One object                          | ⭐⭐⭐⭐⭐              |
+| Factory Method          | Creational | Create object based on type         | ⭐⭐⭐⭐⭐              |
+| Abstract Factory        | Creational | Create related object families      | ⭐⭐⭐                |
+| Builder                 | Creational | Build complex objects               | ⭐⭐⭐⭐⭐              |
+| Prototype               | Creational | Clone objects                       | ⭐⭐                 |
+| Adapter                 | Structural | Convert interface                   | ⭐⭐⭐⭐⭐              |
+| Bridge                  | Structural | Separate abstraction/implementation | ⭐⭐                 |
+| Composite               | Structural | Tree structures                     | ⭐⭐⭐⭐               |
+| Decorator               | Structural | Add behavior dynamically            | ⭐⭐⭐⭐⭐              |
+| Facade                  | Structural | Simplify complex system             | ⭐⭐⭐⭐⭐              |
+| Flyweight               | Structural | Share objects                       | ⭐⭐                 |
+| Proxy                   | Structural | Control access                      | ⭐⭐⭐⭐               |
+| Chain of Responsibility | Behavioral | Pass request through handlers       | ⭐⭐⭐⭐               |
+| Command                 | Behavioral | Request as object                   | ⭐⭐⭐⭐               |
+| Interpreter             | Behavioral | Interpret grammar                   | ⭐                  |
+| Iterator                | Behavioral | Traverse collection                 | ⭐⭐                 |
+| Mediator                | Behavioral | Central communication               | ⭐⭐⭐                |
+| Memento                 | Behavioral | Save/restore state                  | ⭐⭐                 |
+| Observer                | Behavioral | Notify subscribers                  | ⭐⭐⭐⭐⭐              |
+| State                   | Behavioral | Behavior changes with state         | ⭐⭐⭐⭐⭐              |
+| Strategy                | Behavioral | Interchangeable algorithms          | ⭐⭐⭐⭐⭐              |
+| Template Method         | Behavioral | Algorithm skeleton                  | ⭐⭐⭐                |
+| Visitor                 | Behavioral | Add operations externally           | ⭐                  |
