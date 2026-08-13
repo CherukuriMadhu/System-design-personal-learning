@@ -1,0 +1,9 @@
+Structural patterns deal with:
+
+How classes and objects are combined to form larger structures.
+
+Your three:
+
+Adapter
+Decorator
+Facade

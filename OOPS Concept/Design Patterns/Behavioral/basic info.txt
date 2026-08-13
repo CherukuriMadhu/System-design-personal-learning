@@ -1,0 +1,11 @@
+. BEHAVIORAL DESIGN PATTERNS
+
+Behavioral patterns deal with:
+
+How objects communicate and distribute responsibilities.
+
+Your three:
+
+Strategy
+Observer
+State

@@ -1,116 +1,186 @@
-"""6. Builder Pattern ⭐⭐⭐
+"""Builder Pattern ⭐⭐⭐
 Definition
 
-The Builder Pattern separates the construction of a complex object from its representation.
+The Builder Pattern is used to construct complex objects step-by-step.
 
-It is useful when an object has:
+It is especially useful when an object has:
 
-many parameters
-optional parameters
-complex construction steps
+Many attributes
+Optional attributes
+Different combinations of attributes
+Real-world example
+
+Consider creating a Computer.
+
+A computer can have:
+
+CPU
+RAM
+Storage
+GPU
+Keyboard
+Mouse
+WiFi
+Bluetooth
+
+Some are mandatory and some are optional.
+
+Before Builder ❌"""
+class Computer:
+
+    def __init__(
+        self,
+        cpu,
+        ram,
+        storage,
+        gpu,
+        keyboard,
+        mouse,
+        wifi,
+        bluetooth
+    ):
+        self.cpu = cpu
+        self.ram = ram
+        self.storage = storage
+        self.gpu = gpu
+        self.keyboard = keyboard
+        self.mouse = mouse
+        self.wifi = wifi
+        self.bluetooth = bluetooth
+"""
+Creating it:
+
+computer = Computer(
+    "Intel i7",
+    "16GB",
+    "1TB SSD",
+    "RTX 4060",
+    True,
+    True,
+    True,
+    True
+)
 Problem
 
-Imagine:
+It's difficult to understand:
 
-User(
-    name,
-    age,
-    email,
-    phone,
-    address,
-    gender,
-    ...
-)
+"Intel i7",
+"16GB",
+"1TB SSD",
+"RTX 4060"
 
-Constructor becomes difficult to understand.
+Which argument represents what?
 
-Builder makes it cleaner.
+Also, if there are 15 optional parameters, the constructor becomes ugly.
 
-Code
-class User:
+After Builder ✅"""
+class Computer:
 
-    def __init__(self, name, age=None, email=None, phone=None):
-        self.name = name
-        self.age = age
-        self.email = email
-        self.phone = phone
+    def __init__(self):
+        self.cpu = None
+        self.ram = None
+        self.storage = None
+        self.gpu = None
+        self.keyboard = False
+        self.mouse = False
+        self.wifi = False
+        self.bluetooth = False
 
-    def __str__(self):
-        return (
-            f"User(name={self.name}, "
-            f"age={self.age}, "
-            f"email={self.email}, "
-            f"phone={self.phone})"
-        )
+    def show(self):
+        print("CPU:", self.cpu)
+        print("RAM:", self.ram)
+        print("Storage:", self.storage)
+        print("GPU:", self.gpu)
+        print("Keyboard:", self.keyboard)
+        print("Mouse:", self.mouse)
+        print("WiFi:", self.wifi)
+        print("Bluetooth:", self.bluetooth)
 
 
-class UserBuilder:
+class ComputerBuilder:
 
-    def __init__(self, name):
-        self.name = name
-        self.age = None
-        self.email = None
-        self.phone = None
+    def __init__(self):
+        self.computer = Computer()
 
-    def set_age(self, age):
-        self.age = age
+    def set_cpu(self, cpu):
+        self.computer.cpu = cpu
         return self
 
-    def set_email(self, email):
-        self.email = email
+    def set_ram(self, ram):
+        self.computer.ram = ram
         return self
 
-    def set_phone(self, phone):
-        self.phone = phone
+    def set_storage(self, storage):
+        self.computer.storage = storage
+        return self
+
+    def set_gpu(self, gpu):
+        self.computer.gpu = gpu
+        return self
+
+    def add_keyboard(self):
+        self.computer.keyboard = True
+        return self
+
+    def add_mouse(self):
+        self.computer.mouse = True
+        return self
+
+    def add_wifi(self):
+        self.computer.wifi = True
+        return self
+
+    def add_bluetooth(self):
+        self.computer.bluetooth = True
         return self
 
     def build(self):
-        return User(
-            self.name,
-            self.age,
-            self.email,
-            self.phone
-        )
-
-Usage:
-
-user = (
-    UserBuilder("Madhu")
-    .set_age(22)
-    .set_email("madhu@example.com")
-    .set_phone("9999999999")
+        return self.computer
+"""
+Now:
+"""
+computer = (
+    ComputerBuilder()
+    .set_cpu("Intel i7")
+    .set_ram("16GB")
+    .set_storage("1TB SSD")
+    .set_gpu("RTX 4060")
+    .add_keyboard()
+    .add_mouse()
+    .add_wifi()
     .build()
 )
 
-print(user)
-Why return self?
+computer.show()
+"""
+Much easier to understand.
 
-This:
+The important idea
 
-builder.set_age(22)
-builder.set_email("...")
+Builder gives us:
 
-becomes:
+Builder
+   ↓
+Step 1
+   ↓
+Step 2
+   ↓
+Step 3
+   ↓
+build()
+   ↓
+Object
+Real-world examples
 
-builder.set_age(22).set_email("...").build()
+Builder is commonly useful for:
 
-This is called method chaining.
-
-When to use?
-
-Use Builder when:
-
-An object has many optional properties or complicated construction steps.
-
-Common LLD examples
+Computer configuration
 Pizza
-Computer
-Car
-User
 HTTP Request
 SQL Query
+Car
 House
+User profile
+Interview definition
 
-
-
-"""
+Builder Pattern separates the construction of a complex object from its representation and allows the object to be constructed step-by-step."""
