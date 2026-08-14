@@ -69,3 +69,9 @@ print("-" * 40)
 flight = GooglePayFlight()
 flight.book_flight("Hyderabad", "Delhi")
 #ISP: One interface → One purpose. Don't force classes to implement methods they don't use.
+
+"""
+    SRP → "One Class, One Job."
+    ISP → "One Interface, One Purpose."
+
+"""

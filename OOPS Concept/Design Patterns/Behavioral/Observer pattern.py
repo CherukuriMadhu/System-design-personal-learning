@@ -1,4 +1,4 @@
-Definition
+"""Definition
 
 The Observer Pattern establishes a one-to-many relationship where:
 
@@ -95,4 +95,4 @@ GUI event listeners
 Stock price notifications
 Interview definition
 
-Observer Pattern defines a one-to-many dependency so that when the subject changes state, all registered observers are automatically notified.
+Observer Pattern defines a one-to-many dependency so that when the subject changes state, all registered observers are automatically notified."""

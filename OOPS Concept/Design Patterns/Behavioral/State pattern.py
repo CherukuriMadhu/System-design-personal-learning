@@ -1,4 +1,4 @@
-State Pattern ⭐⭐⭐
+"""State Pattern 
 Definition
 
 The State Pattern allows an object to change its behavior when its internal state changes.
@@ -122,4 +122,4 @@ Media Player
 Order Status
 Interview definition
 
-State Pattern allows an object to alter its behavior when its internal state changes, making the object appear to change its class.
+State Pattern allows an object to alter its behavior when its internal state changes, making the object appear to change its class."""

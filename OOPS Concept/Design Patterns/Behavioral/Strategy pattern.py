@@ -1,4 +1,4 @@
-Strategy Pattern ⭐⭐⭐
+"""Strategy Pattern 
 Definition
 
 The Strategy Pattern defines multiple algorithms/behaviors, encapsulates each one, and allows them to be swapped at runtime.
@@ -99,4 +99,4 @@ Structure
          UPI   Card   PayPal
 Interview definition
 
-Strategy Pattern defines a family of algorithms, encapsulates each algorithm, and makes them interchangeable at runtime.
+Strategy Pattern defines a family of algorithms, encapsulates each algorithm, and makes them interchangeable at runtime."""

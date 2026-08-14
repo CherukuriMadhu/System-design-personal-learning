@@ -53,3 +53,4 @@ class NetBanking(PaymentMethod):
 payment = NetBanking()
 payment.pay(2500)
 # we can extend the payment clasess without modifying the existing code, adhering to the Open/Closed Principle (OCP).
+# new fetures = new classes 
