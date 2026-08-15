@@ -1,4 +1,4 @@
-"""Facade Pattern ⭐⭐⭐
+"""Facade Pattern 
 Definition
 
 The Facade Pattern provides a simple interface to a complex subsystem.

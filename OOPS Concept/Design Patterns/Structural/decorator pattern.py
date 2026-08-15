@@ -1,4 +1,4 @@
-""" Decorator Pattern ⭐⭐⭐
+""" Decorator Pattern 
 Definition
 
 The Decorator Pattern dynamically adds new behavior to an object without modifying its original class.

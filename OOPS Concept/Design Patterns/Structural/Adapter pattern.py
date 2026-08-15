@@ -1,4 +1,4 @@
-""" Adapter Pattern ⭐⭐⭐
+""" Adapter Pattern 
 Definition
 
 The Adapter Pattern allows incompatible interfaces to work together.

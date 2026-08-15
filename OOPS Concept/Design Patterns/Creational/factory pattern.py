@@ -1,4 +1,4 @@
-"""Factory Method Pattern ⭐⭐⭐
+"""Factory Method Pattern
 Definition
 
 The Factory Method Pattern provides a method for creating objects without exposing the object-creation logic to the client.

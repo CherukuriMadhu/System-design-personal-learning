@@ -1,4 +1,4 @@
-"""Builder Pattern ⭐⭐⭐
+"""Builder Pattern 
 Definition
 
 The Builder Pattern is used to construct complex objects step-by-step.
