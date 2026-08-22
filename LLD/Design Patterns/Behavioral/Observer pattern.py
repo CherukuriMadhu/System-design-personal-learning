@@ -1,4 +1,4 @@
-"""Definition
+"""what is Observer Pattern?
 
 The Observer Pattern establishes a one-to-many relationship where:
 
