@@ -17,7 +17,7 @@ The plug and socket have different interfaces.
 
 The adapter makes them compatible.
 
-Before Adapter ❌
+Before Adapter 
 
 Suppose your application expects:
 

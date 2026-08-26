@@ -29,7 +29,7 @@ CoffeeWithMilkSugarCream
 
 we dynamically decorate the coffee.
 
-Before Decorator ❌
+Before Decorator 
 class Coffee:
 
     def cost(self):
