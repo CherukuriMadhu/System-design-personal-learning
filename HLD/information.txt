@@ -9,15 +9,31 @@ reverse proxy:
 API:
     API is used to interact with user and applications or applications to applications
     There are 3 ways API to interact:
-    1. REST
+    1. REST :
+        REST API:
+            They deine the specific type of requests that you can make to the server.
+            THERE ARE 4 STANDARD METHODS from the server:
+            1. HTTP GET
+            2. HTTP POST
+            3. HTTP PATCH # UPDATE EXISTING DATA 
+            4. HTTP DELETE
     2. GRAPH QL # predefined and presize requests with in a single query. 
         example:
         1 menu and 1 item multiple options
-    3. gRBC
-REST API:
-    They deine the specific type of requests that you can make to the server.
-    THERE ARE 4 STANDARD METHODS from the server:
-    1. HTTP GET
-    2. HTTP POST
-    3. HTTP PATCH # UPDATE EXISTING DATA 
-    4. HTTP DELETE
+    3. gRBC:
+        # grpc allows diffent microservices to talk to each other using 
+        PROTOCOL BUFFERS or PROTOBUF:
+            # the pack lot of info in small and efficient format
+
+
+MESSAGE QUEUE:
+    example:
+        CLEANING OF HOME OR TODO LIST
+            HOUSE OWNER AND MAID(CLEANER)
+            secnario 1: clean all at a time
+            secnario 2: make a checklist and cleaner will clean it 
+    It just works like a check list
+
+    PRODUCER----puts messsages in the queue------> MESSAGE QUEUE-----picks messages from the message queue one by one ----->CONSUMER
+    # efficiency:
+        home owner can work on other tasks 
