@@ -1,2 +1,2 @@
 # Daily practice and progress
-# hld and lld
+# High level and Low Level Design
