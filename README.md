@@ -1,2 +1,2 @@
-# Daily practice and progress
+# Daily practice and 
 # High level and Low Level Design
